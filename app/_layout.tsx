@@ -6,10 +6,10 @@ import { theme } from "@/utils/theme";
 export default function Layout() {
   return (
     <Tabs screenOptions={{ tabBarActiveTintColor: theme.colorGreen }}>
-      <Tabs.Screen name="index" options={{ headerShown: false, title: "Home", tabBarShowLabel: false , tabBarIcon: ({size, color})=>{ return <Entypo name="leaf" size={size} color={color} />
+      <Tabs.Screen name="index" options={{ title: "Home", tabBarShowLabel: false , tabBarIcon: ({size, color})=>{ return <Entypo name="leaf" size={size} color={color} />
 
       }}} />
-      <Tabs.Screen name="profile" options={{ headerShown: false, title: "Profile", tabBarShowLabel: false, tabBarIcon: ({size, color})=>{
+      <Tabs.Screen name="profile" options={{ title: "Profile", tabBarShowLabel: false, tabBarIcon: ({size, color})=>{
         return <Feather name="user" size={size} color={color} />
       }}} />
     </Tabs>
