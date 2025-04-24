@@ -1,4 +1,4 @@
-import { View, StyleSheet } from 'react-native';
+import { View, StyleSheet, StatusBar } from 'react-native';
 import { theme } from '@/utils/theme';
 import { useUserStore } from '@/store/userStore';
 import { useRouter } from 'expo-router';
@@ -21,6 +21,7 @@ export default function OnboardingScreen() {
       colors={[theme.colorGreen, theme.colorAppleGreen, theme.colorLimeGreen]}
       style={styles.container}
     >
+      <StatusBar barStyle='light-content' />
       <PlantlyButton title='Let me in' onPress={handlePress} />
     </LinearGradient>
   );
