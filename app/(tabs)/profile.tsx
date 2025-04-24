@@ -1,4 +1,4 @@
-import { Text, View, StyleSheet, Button } from 'react-native';
+import { View, StyleSheet, Button } from 'react-native';
 import { theme } from '@/utils/theme';
 import { useUserStore } from '@/store/userStore';
 
@@ -18,8 +18,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: theme.colorWhite,
-  },
-  text: {
-    fontSize: 24,
   },
 });
