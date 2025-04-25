@@ -15,6 +15,14 @@ export default function Layout() {
           presentation: 'modal',
         }}
       />
+      <Stack.Screen
+        name='new'
+        options={{
+          presentation: 'modal',
+          animation: 'slide_from_bottom',
+          title: 'New Plant',
+        }}
+      />
     </Stack>
   );
 }
