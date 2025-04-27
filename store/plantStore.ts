@@ -3,7 +3,7 @@ import { create } from 'zustand';
 import { persist, createJSONStorage } from 'zustand/middleware';
 
 // Define the structure for a plant in the application
-type PlantType = {
+export type PlantType = {
   id: string;
   name: string;
   wateringFrequencyDays: number;
