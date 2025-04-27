@@ -22,7 +22,7 @@ type PlantsState = {
     name: string,
     wateringFrequencyDays: number,
     imageUri?: string
-  ) => void; // Function to add a new plant
+  ) => Promise<void>; // Function to add a new plant
   removePlant: (plantId: string) => void; // Function to remove a plant
   waterPlant: (plantId: string) => void; // Function to mark a plant as watered
 };
