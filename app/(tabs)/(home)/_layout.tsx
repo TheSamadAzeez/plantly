@@ -23,6 +23,14 @@ export default function Layout() {
           ),
         }}
       />
+      <Stack.Screen
+        name='plants/[plantId]'
+        options={{
+          title: '',
+          headerTintColor: theme.colorBlack,
+          headerBackVisible: false,
+        }}
+      />
     </Stack>
   );
 }
