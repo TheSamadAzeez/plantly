@@ -10,7 +10,7 @@ export type PlantType = {
   name: string;
   wateringFrequencyDays: number;
   lastWateredAtTimestamp?: number;
-  imageUri?: string;
+  imageUri?: string; // Optional URI to the plant's image
 };
 
 // Define the shape of the global plants state and its actions
